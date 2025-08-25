@@ -42,7 +42,7 @@ export const Timer = () => {
         className="p-2.5 min-w-[100px] bg-lime-100 shadow-sm shadow-offset-x-4 shadow-offset-y-2 shadow-spread-2 rounded-2xl font-bold cursor-pointer"
         onClick={handleToggle}
       >
-        {isOn ? "OFF" : "ON"}
+        {startTime === 0 && time === 0 ? "ON" : isOn ? "OFF" : "ON"}
       </button>
       <button
         className="p-2.5 min-w-[100px] bg-lime-100 shadow-sm shadow-offset-x-4 shadow-offset-y-2 shadow-spread-2 rounded-2xl font-bold cursor-pointer"
